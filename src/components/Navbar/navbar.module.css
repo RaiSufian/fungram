@@ -1,0 +1,70 @@
+.navbar_nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.navbar {
+    display: flex;
+    padding: 8px 10px;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.navMenu {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.navMenu ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.navMenu ul a {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.active {
+    color: #D42978;
+    position: relative;
+}
+
+.active::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 80%;
+    top: 100%;
+    left: 0px;
+    background-color: #D42978;
+}
+
+.group_btn {
+    display: flex;
+    gap: 25px;
+}
+
+.group_btn button {
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.light_btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #FFF;
+}
+
+.dark_btn {
+    background: #D42978;
+    color: white;
+    border: none;
+}
