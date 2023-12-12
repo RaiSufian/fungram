@@ -27,7 +27,7 @@ const Faqs = () => {
                 <h2>Frequently Asked Questions</h2>
                 <div className={styles.faqs_list}>
                     {questions.map(question =>
-                        <div className={` ${styles.faq_item} ${active == question.id ? styles.active : null}`}>
+                        <div className={` ${styles.faq_item} ${active == question.id ? styles.active : null}`} key={question.id}>
                             <div className={styles.faq_head} onClick={() => setActive(question.id)}>
                                 <span>{question.id}</span>
                                 <p>{question.question}</p>
@@ -63,9 +63,9 @@ const Faqs = () => {
                 </div>
                 <div className={styles.moreBtn}>
 
-                <button>
-                    See All FAQ’s
-                </button>
+                    <button>
+                        See All FAQ’s
+                    </button>
                 </div>
             </div>
         </section>
