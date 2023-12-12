@@ -1,0 +1,54 @@
+.bannerSection {
+    border-radius: 20px;
+    background: #FCAE4B;
+    padding: 40px;
+}
+
+.bannercontent h3 {
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.bannercontent h3 span {
+    color: #000;
+}
+
+.bannercontent p {
+    font-size: 20px;
+    padding: 12px 0px;
+}
+
+.bannercontent button {
+    width: 147px;
+    height: 43px;
+    color: #D42978;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.bannerBlock {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.slider {
+    width: 400px;
+}
+
+.card img {
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card p {
+    text-align: center;
+    font-family: Satisfy;
+    font-size: 20px;
+    color: #000;
+    padding-top: 5px;
+}

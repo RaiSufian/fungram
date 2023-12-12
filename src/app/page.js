@@ -2,7 +2,10 @@
 import styles from './page.module.css'
 import HeroSection from '@/components/Home/Hero/HeroSection';
 import FeatheredCelebrity from '@/components/Home/FeatheredCel';
-import 'react-multi-carousel/lib/styles.css';
+import Fangram from '@/components/Home/Fangramslider';
+import Banner from '@/components/Home/Banner';
+import Reviews from '@/components/Home/reviews';
+import Faqs from '@/components/Home/FAQs';
 export default function Home() {
   return (
     <>
@@ -25,6 +28,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Fangram name="Next Day DeliverySee All" />
+      <Fangram name="FanGram Dhamaka" />
+      <Banner />
+      <Reviews />
+      <Faqs />
     </>
   )
 }

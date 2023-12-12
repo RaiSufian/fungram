@@ -111,7 +111,7 @@
 }
 
 .hero_slide img {
-    max-width: 80%;
+    max-width: 90%;
     padding: 10px 0px;
     border-radius: 8px;
     overflow: hidden;
@@ -121,12 +121,10 @@
     margin-top: 20px;
 }
 
-.heroCard {
-    padding-bottom: 20px;
-}
 
 .heroCard img {
     border-radius: 20px;
+    margin: auto;
 }
 
 .text_img1 {

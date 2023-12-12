@@ -1,0 +1,118 @@
+.section {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header h2 {
+    font-size: 35px;
+    font-style: normal;
+}
+
+.header button {
+    width: 90px;
+    height: 40px;
+    border-radius: 300px;
+    border: 1px solid #D42978;
+    color: #D42978;
+    font-size: 18px;
+    font-weight: 500;
+    background: transparent;
+}
+
+.sliderSide {
+    padding-top: 20px;
+}
+
+.slider_item {
+    padding: 5px;
+}
+
+.card {
+    background-color: #292929;
+    height: 330px;
+    border-radius: 15px;
+    padding: 25px 15px 15px 15px;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card img {
+    border-radius: 75px;
+    margin: auto;
+}
+
+.card h3 {
+    font-size: 22px;
+}
+
+.cardItems {
+    display: flex;
+    justify-content: space-between;
+    font-family: Satisfy;
+    font-size: 14px;
+    padding: 8px 0px;
+}
+
+.card h5 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.card button {
+    padding: 8px 20px;
+    background-color: white;
+    color: #D42978;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.fav {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+    background-color: #FCAE4B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.sidlerItem{
+    padding: 5px;
+    box-sizing: border-box;
+}
+.sliderSide{
+    position: relative;
+}
+.slider_btns{
+    position: absolute;
+    top: -30px;
+    right: 30px;
+}
+.slider_btns button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #D42978;
+    border-radius: 20px;
+}
+.back_btn{
+    position: absolute;
+    left: -50px;
+   
+}

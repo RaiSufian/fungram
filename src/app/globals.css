@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    max-width: 1220px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -28,6 +28,54 @@ input:focus {
     outline: none;
 }
 
-.hero_section .react-multiple-carousel__arrow {
-    display: none;
+.hero_section .slick-dots li.slick-active button:before {
+    color: white !important;
+}
+
+.hero_section .slick-dots li button:before {
+    color: white !important;
+}
+
+.hero_section .slick-dots li {
+    width: 5px;
+}
+
+
+.feathered_cel .slick-slide:nth-child(odd) {
+    padding-top: 40px;
+}
+
+.feathered_cel .slick-prev {
+    left: -50px;
+    transform: translateY(-110%);
+    z-index: 10;
+    opacity: 0;
+}
+
+.feathered_cel .slick-next {
+    right: -30px;
+    transform: translateY(-110%);
+    z-index: 10;
+    opacity: 0;
+}
+
+.feathered_cel .slick-prev:before,
+.feathered_cel .slick-next:before {
+    font-size: 40px;
+}
+
+.fangramSlider .slick-prev {
+    top: -33px;
+    left: 90.5%;
+    z-index: 10;
+    opacity: 0;
+}
+.fangramSlider .slick-prev::before, .fangramSlider .slick-next::before{
+    font-size: 30px;
+}
+.fangramSlider .slick-next{
+    top: -33px;
+    right:  40px;
+    z-index: 10;
+    opacity: 0;
 }

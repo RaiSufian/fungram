@@ -2,28 +2,19 @@
 import style from './Hero.module.css';
 import Image from 'next/image';
 import React from 'react';
-import Carousel from 'react-multi-carousel';
-
+import Slider from "react-slick";
 const HeroSection = () => {
-    const responsive = {
-        superLargeDesktop: {
-            // the naming can be any, depends on you.
-            breakpoint: { max: 4000, min: 3000 },
-            items: 2
-        },
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 2
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 1
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1
-        }
+    const settings = {
+        infinite: true,
+        centerPadding: "60px",
+        slidesToShow: 1,
+        speed: 500,
+        rows: 2,
+        slidesPerRow: 2,
+        arrows: false,
+        dots: true,
     };
+
 
     return (
         <section className={style.hero_section}>
@@ -67,34 +58,58 @@ const HeroSection = () => {
                         <Image src="/assets/hero_text2.png" alt="svg" width={280} height={40} className={style.text_img2} />
                     </div>
                     <div className={style.hero_slide}>
-                        {/* <Image src="/assets/hero_img.png" layout="responsive" width='80' height='80' /> */}
-                        <Carousel
-                            responsive={responsive}
-                            showDots={true}
-                        >
-                            <div>
-                                <div className={style.heroCard}>
-                                    <Image src="/assets/hero1.png" layout="responsive" width='80' height='80' />
-                                    <Image src="/assets/hero3.png" layout="responsive" width='80' height='80' />
-                                </div>
+                        <Slider {...settings}>
+
+                            <div className={style.heroCard}>
+                                <Image src="/assets/hero1.png" layout="responsive" width='90' height='90' />
                             </div>
-                            <div>
-                                <div className={style.heroCard} style={{ marginTop: '20px' }}>
-                                    <Image src="/assets/hero2.png" layout="responsive" width='80' height='80' />
-                                    <Image src="/assets/hero4.png" layout="responsive" width='80' height='80' />
-                                </div>
+
+                            <div className={style.heroCard}>
+                                <Image src="/assets/hero2.png" layout="responsive" width='90' height='90' />
                             </div>
-                            <div>
-                                <div className={style.heroCard}>
-                                    <Image src="/assets/hero1.png" layout="responsive" width='80' height='80' />
-                                    <Image src="/assets/hero3.png" layout="responsive" width='80' height='80' />
-                                </div>
+
+                            <div className={style.heroCard}>
+                                <Image src="/assets/hero3.png" layout="responsive" width='80' height='80' />
                             </div>
-                            <div><div className={style.heroCard} style={{ marginTop: '20px' }}>
-                                <Image src="/assets/hero2.png" layout="responsive" width='80' height='80' />
+
+                            <div className={style.heroCard}>
                                 <Image src="/assets/hero4.png" layout="responsive" width='80' height='80' />
-                            </div></div>
-                        </Carousel>
+                            </div>
+
+                            <div className={style.heroCard}>
+                                <Image src="/assets/hero1.png" layout="responsive" width='80' height='80' />
+                            </div>
+
+                            <div className={style.heroCard}>
+                                <Image src="/assets/hero2.png" layout="responsive" width='80' height='80' />
+                            </div>
+
+                            <div className={style.heroCard}>
+                                <Image src="/assets/hero3.png" layout="responsive" width='80' height='80' />
+                            </div>
+
+                            <div className={style.heroCard}>
+                                <Image src="/assets/hero4.png" layout="responsive" width='80' height='80' />
+                            </div>
+
+                            <div className={style.heroCard}>
+                                <Image src="/assets/hero1.png" layout="responsive" width='80' height='80' />
+                            </div>
+
+                            <div className={style.heroCard}>
+                                <Image src="/assets/hero2.png" layout="responsive" width='80' height='80' />
+                            </div>
+
+                            <div className={style.heroCard}>
+                                <Image src="/assets/hero3.png" layout="responsive" width='80' height='80' />
+                            </div>
+
+                            <div className={style.heroCard}>
+                                <Image src="/assets/hero4.png" layout="responsive" width='80' height='80' />
+                            </div>
+
+                        </Slider>
+                        
                     </div>
                 </div>
             </div>

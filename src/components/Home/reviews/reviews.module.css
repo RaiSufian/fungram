@@ -1,0 +1,67 @@
+.section {
+    padding-top: 50px;
+}
+
+.block_header h3 {
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.reviews_slider {
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.card {
+    border-radius: 20px;
+    background: #292929;
+    display: flex;
+    align-items: center;
+}
+
+.cardImg {
+    width: 40%;
+    text-align: center;
+}
+
+.cardImg img {
+    max-width: 260px;
+    margin: auto;
+    border-radius: 20px;
+    transform: scale(1.1);
+    object-fit: cover;
+}
+
+.cardContent {
+    width: 60%;
+
+}
+
+.cardContent h3 {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.review_icon {
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.cardContent h6 {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.cardContent p {
+    font-size: 14px;
+    text-align: center;
+}
